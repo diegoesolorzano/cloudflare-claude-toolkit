@@ -1,0 +1,4 @@
+# Never commit real encrypted tokens
+skill/secrets/meta-token.gpg
+
+.DS_Store
