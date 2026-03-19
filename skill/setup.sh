@@ -47,7 +47,7 @@ fi
 
 # Encrypt
 mkdir -p "$SECRETS_DIR"
-echo -n "$META_TOKEN" | gpg --encrypt --recipient "$GPG_RECIPIENT" --trust-model always -o "$SECRETS_DIR/meta-token.gpg"
+printf "%s" "$META_TOKEN" | gpg --encrypt --recipient "$GPG_RECIPIENT" --trust-model always -o "$SECRETS_DIR/meta-token.gpg"
 
 # Verify
 echo ""
